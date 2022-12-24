@@ -38,7 +38,7 @@ int main(){
 
 	}
 
-	footer();
+//	footer();
 
 return 0;
 }
