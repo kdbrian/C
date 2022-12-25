@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<unistd.h>
-#include "head.h"//contains all our functions and variables
+
+#include "func.h"//contains all our functions and variables
 
 
 int main(){
@@ -17,15 +18,15 @@ int main(){
 	switch(choice){
 
 		case 1://login
-			loginUser();
+			LoginUser();
 			break;
 
 		case 2://register
-			registerUser();
+			//registerUser();
 			break;
 
 		case 3://system stat
-			sys_report();
+			//sys_report();
 			break;
 
 		case 0:
