@@ -141,6 +141,9 @@ void remove_node(list * lst, int data){
         temphead = NULL;
 }
 
+/**
+ * a method to insert a node at an arbitrary position in a linked list
+*/
 void insert_at(list * lst, int data, int position){
 
     if(position > getsize(lst)){
@@ -152,15 +155,18 @@ void insert_at(list * lst, int data, int position){
 
     int counter =1;
     node * temphead=lst->head;
+    node * prev;
 
     while(counter < getsize(lst) && counter < position){
+        prev=temphead;
+        //printf("Counter at %d on node %p\n",counter, temphead);
         temphead = temphead->next;
         counter ++;
     }
-
+    //printf("Value of temphead is %p\n", temphead);
     node * new_node = create_node(data);
 
-    new_node->next = temphead->next;
-    temphead->next = new_node;
+    prev->next = new_node;
+    new_node->next = temphead;
     lst->size ++;
 }
