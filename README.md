@@ -1,6 +1,6 @@
 # C
 😋😋 All c codes
 🤐😪 This language thou
-🥱😴 I hate pointers
+🥱😴 I now love pointers
 😌
 🤩🤩 moore energy lets do this
