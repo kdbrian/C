@@ -24,35 +24,18 @@
     size = 4
 */
 #include<stdio.h>
-#include<stdlib.h>
-// logical view of a node
-typedef struct {
-    int element;
-    void * next;
-}node;
-
-// logical view of a linked list
-typedef struct {
-    node head;
-    int size;
-}list;
-
-void print_list(list lst);
-void print_node(node n);
+#include "linkedlist.h"
 
 int main(){
 
-    list list1;
-    node hd , nd1;
+    list * list1 = list_init(0);
+    //node * hd = create_node(10);
+    insert(list1, 10);
+    insert(list1, 20);
+    printf("Size of list is %d\n", getsize(list1));
+    print_list(list1);
 
-    hd.element=10;
-    hd.next=(void *)&nd1;
-
-    list1.head=hd;
-    list1.size++;
-
-   //print_list(list1);
-    //assigning this way can be very tideous
-
+    remove_node(list1, 20);
+   
     return 0;
 }
