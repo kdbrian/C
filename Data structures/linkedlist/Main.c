@@ -5,9 +5,9 @@
     a node contains an element and a link to the next node in the list
 
                 *===========*
-                +  element  + 
+                *  element  + 
                 *===========*
-                + link_next +
+                * link_next +
                 *===========*
 
         [head]                                                              [tail]
