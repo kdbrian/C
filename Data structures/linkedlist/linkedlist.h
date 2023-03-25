@@ -1,3 +1,29 @@
+/**
+    representation of linked list
+    nodes linked through pointers
+    a node contains an element and a link to the next node in the list
+
+                *===========*
+                *  element  + 
+                *===========*
+                * link_next +
+                *===========*
+
+        [head]                                                              [tail]
+        0xe21j                0xcw45                  0xo2k3                0xklmd
+    +------------+        +------------+          +------------+         +------------+                       
+    +---  10  ---+  +====>+---  20  ---+   +=====>+---  30  ---+  +=====>+---  40  ---+                       
+    +------------+  |     +------------+   |      +------------+  |      +------------+                       
+    +---0xcw45---+  |     +---0xo2k3---+   |      +---0xklmd---+  |      +----NULL----+                       
+    +------------+  |     +------------+   |      +------------+  |      +------------+                       
+          |         |            |         |            |         |            |
+          +---------+            +---------+            +---------+            +=>+-----+
+                                                                                  |#####|
+                                                                                  +-----+
+    size = 4
+
+*/
+
 #include "node.h"
 #include<stdbool.h>
 // logical view of a linked list
