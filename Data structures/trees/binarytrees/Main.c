@@ -18,5 +18,15 @@ int main(){
 
     printPostOrder(tree1->root_node);
 
+    printf("\nPre order\n");
+
+    printPreOrder(tree1->root_node);
+
+    insertRight(tree1,findPosition(tree1), 76);
+
+    printf("\nPre order\n");
+
+    printPreOrder(tree1->root_node);
+
     return 0;
 }
