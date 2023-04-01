@@ -25,6 +25,7 @@ tree * createtree(int root_data){
     return new_tree;
 }
 
+//not working 
 void insert_mostLeft(tree * tr, int data){
     if (tr == NULL)
         return;
