@@ -13,7 +13,7 @@ int main(){
 
 	welcome();
 
-	printf("\n\tConnected to Server with id [%d]\n");
+	printf("\n\tConnected to Server\n");
 
 	printf("\nWait for message from host\n");
 
